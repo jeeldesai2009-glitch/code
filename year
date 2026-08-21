@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main ()
+{
+float interest,principle,rate,years;
+ printf("ENTER THE AMOUNT OF PRINCIPLE");
+ scanf("%f", &principle);
+
+ printf("ENTER THE AMOUNT OF RATE");
+ scanf("%f", &rate);
+
+ printf("ENTER THE NO OF YEARS");
+ scanf("%f", &years);
+
+ interest = principle*rate*years /100;
+
+
+ printf("%f interest= %f principle : %f rate : %f year\n", interest,principle,rate,years);
+}
