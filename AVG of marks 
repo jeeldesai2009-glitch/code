@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main()
+{
+    float mathematics, chemistry, biology, total, average;
+
+    printf("\n Enter the marks of mathematics: ");
+    scanf("%f", &mathematics);
+
+    printf("\n\n Enter the marks of Chemistry: ");
+    scanf("%f", &chemistry);
+
+    printf("\n\n Enter the marks of biology: ");
+    scanf("%f", &biology);
+
+    total = mathematics + chemistry + biology;
+    printf("\n\n The total of three subjects: %f", total);
+
+    average = total / 3;
+    printf("\n\n The average of three subjects: %f", average);
+
+    if (mathematics < 35 || chemistry < 35 || biology < 35)
+    {
+        printf("\n\n Result: Fail (less than 35 in any one)");
+    }
+    else
+    {
+        if (average >= 70)
+        {
+            printf("\n Result is Distinction");
+        }
+        else if (average >= 60)
+        {
+            printf("\n Result is First class");
+        }
+        else if (average >= 50)
+        {
+            printf("\n Result is Second class");
+        }
+        else if (average >= 35)
+        {
+            printf("\n Result is Third class");
+        }
+        else
+        {
+            printf("\n Result is Fail");
+        }
+    }
+
+    return 0;
+}
