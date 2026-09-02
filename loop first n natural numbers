@@ -1,0 +1,14 @@
+#include<stdio.h>
+void main()
+{
+int i=0,n;
+printf("enter a number");
+scanf("%d",&n);
+do
+{
+++i;
+printf("%d\n", i);
+
+}
+while(i<n);
+}
